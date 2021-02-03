@@ -6,12 +6,14 @@ selectedStock = input()
 
 stock = yf.Ticker(selectedStock)
 
-print("\nWhat information would you like?\nMajor Holders\nCashflow\nBalance Sheet\nRecommendations\nCalendar\nSplits\nDividends\n")
+print("\nWhat information would you like?\nMajor Holders\nPrice\nCashflow\nBalance Sheet\nRecommendations\nCalendar\nSplits\nDividends\nTable\n")
 
 chosenInfo = input()
 
 if chosenInfo == 'Major Holders':
     print(stock.major_holders)
+elif chosenInfo == 'Price':
+    print(stock.info['open'])
 elif chosenInfo == 'Cashflow':
     print(stock.quarterly_cashflow)
 elif chosenInfo == 'Balance Sheet':
@@ -24,6 +26,19 @@ elif chosenInfo == 'Splits':
     print(stock.splits)
 elif chosenInfo == 'Dividends':
     print(stock.dividends)
+elif chosenInfo == 'Table':
+
+    print("Please choose a start date in the format of year-month-day example: 2020-06-02")
+
+    startdate = input()
+
+    print("Please choose an end date in the format of year-month-day example: 2020-06-02 ")
+
+    enddate = input()
+
+    stock_historical = stock.history(start=startdate, end=enddate, interval="5d")
+    print(stock_historical)
+    
 else:
     print("error")
 
