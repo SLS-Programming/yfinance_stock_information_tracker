@@ -6,9 +6,7 @@ selectedStock = input()
 
 stock = yf.Ticker(selectedStock)
 
-stock.info
-
-print("\nWhat information would you like?\nMajor Holders\nCashflow\nBalance Sheet\nRecommendations\nCalendar\n")
+print("\nWhat information would you like?\nMajor Holders\nCashflow\nBalance Sheet\nRecommendations\nCalendar\nSplits\nDividends\n")
 
 chosenInfo = input()
 
@@ -22,6 +20,10 @@ elif chosenInfo == 'Recommendations':
     print(stock.recommendations)
 elif chosenInfo == 'Calendar':
     print(stock.calendar)
+elif chosenInfo == 'Splits':
+    print(stock.splits)
+elif chosenInfo == 'Dividends':
+    print(stock.dividends)
 else:
     print("error")
 
