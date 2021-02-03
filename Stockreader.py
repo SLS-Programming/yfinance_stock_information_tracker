@@ -32,7 +32,7 @@ elif chosenInfo == 'Table':
 
     startdate = input()
 
-    print("Please choose an end date in the format of year-month-day example: 2020-06-02 ")
+    print("Please choose an end date in the format of year-month-day example: 2021-01-01")
 
     enddate = input()
 
