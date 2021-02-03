@@ -1,2 +1,10 @@
 # yfinance_stock_information_tracker
-A basic python script that allows users to input a Ticker and then see stock information on that Ticker.
+A basic python script that allows users to input a stock ticker and then sends the information to the stock api "yfinance". It then returns with the information requested
+
+
+  _________ __                __     .___        _____                           __  .__                ___________                     __                 
+ /   ______/  |_ ____   ____ |  | __ |   | _____/ _______________  _____ _____ _/  |_|__| ____   ____   \__    _______________    ____ |  | __ ___________ 
+ \_____  \\   __/  _ \_/ ___\|  |/ / |   |/    \   __/  _ \_  __ \/     \\__  \\   __|  |/  _ \ /    \    |    |  \_  __ \__  \ _/ ___\|  |/ _/ __ \_  __ \
+ /        \|  |(  <_> \  \___|    <  |   |   |  |  |(  <_> |  | \|  Y Y  \/ __ \|  | |  (  <_> |   |  \   |    |   |  | \// __ \\  \___|    <\  ___/|  | \/
+/_______  /|__| \____/ \___  |__|_ \ |___|___|  |__| \____/|__|  |__|_|  (____  |__| |__|\____/|___|  /   |____|   |__|  (____  /\___  |__|_ \\___  |__|   
+        \/                 \/     \/          \/                       \/     \/                    \/                        \/     \/     \/    \/       
